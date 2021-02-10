@@ -16,8 +16,8 @@ def resultat():
     global operadors
     try:
         operador=str(eval(operadors))
-        text_pantalla.set("0")
-        text_pantalla_ans.set(operador)
+        text_pantalla.set(operador)
+        text_pantalla_ans.set("ANS="+operador)
     except:
         text_pantalla.set("ERROR")
     operadors = ("")
