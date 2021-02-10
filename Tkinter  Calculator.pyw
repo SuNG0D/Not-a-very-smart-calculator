@@ -43,8 +43,8 @@ def ClearANS():
 
 text_pantalla = StringVar()
 text_pantalla_ans = StringVar()
-
 operadors = ("")
+
 text_numeros = Label(window, font=("arial", 20, "bold"), width=20, textvariable= text_pantalla, bd=20, bg="grey", relief= RIDGE, justify="right").place(x=10, y=75)
 text_numeros_anteriors = Label(window, font=("arial", 15, "bold"), width=20, textvariable= text_pantalla_ans, bd=20, bg="grey", relief= RIDGE, justify="right").place(x=10, y=5)
 
