@@ -5,4 +5,4 @@ As I already said, this is just a calculator that I have written for a school pr
 
 I still have work to do, since I want to make a fully functional calculator, because why not?
 
-I will keep updating this until I finish, or I get bored of it.
+I will keep updating this until I finish it, or I get bored of it.
