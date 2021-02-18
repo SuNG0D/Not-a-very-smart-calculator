@@ -40,6 +40,10 @@ def ClearANS():
     operadors = ("")
     text_pantalla_ans.set("0")
 
+def closing():
+    if messagebox.askokcancel("Quit", "Are you sure you wanna leave? :("):
+        window.destroy()
+
 
 text_pantalla = StringVar()
 text_pantalla_ans = StringVar()
@@ -72,9 +76,9 @@ button_dividir = Button(window, text = "%", width=button_width, height=button_he
 button_CE = Button(window, text = "CE", width=button_width, height=button_height, command = CE).place(x=227, y=180)
 button_C = Button(window, text = "C", width=button_width, height=button_height, command = clear).place(x=297, y=180)
 button_Resultat = Button(window, text = "=", width=button_width, height=button_height, command = resultat).place(x=297, y=360)
-button_CE = Button(window, text = "CE", width=button_width, height=button_height, command = ClearANS).place(x=227, y=420)
-
+button_CE = Button(window, text = "ClearANS", width=button_width, height=button_height, command = ClearANS).place(x=227, y=420)
+button_pi = Button(window, text = "π", width=button_width, height=button_height, command = lambda:numeros("pi")).place(x=297, y=420)
 welcome_text = (messagebox.showinfo("Hello There! :D","Made by: SuNG0D"))
 
+window.protocol("WM_DELETE_WINDOW", closing)
 window.mainloop()
-
